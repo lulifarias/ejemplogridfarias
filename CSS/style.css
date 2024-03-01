@@ -1,0 +1,75 @@
+.catamaran-font> {
+    font-family: "Catamaran", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 90px;
+    font-style:normal;
+}
+
+*{
+margin: 0px; 
+padding: 0px
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: 80px auto 45px;
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer"
+    ;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+
+header {
+    background-color: black;
+    grid-area: header
+}
+
+main {
+    background-image: url(../imagenes/img.jpg);
+    grid-area: main;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+main h2{
+    font-family: "Catamaran", sans-serif;
+    display: grid;
+    font-size: 90px;
+    text-align: center;
+
+}
+
+main p{
+    font-family: "Catamaran", sans-serif;
+    display: grid;
+    font-size: 25px;
+    text-align: center;
+}
+footer {
+    grid-area: footer;
+    height: 100px;
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(3,50px);
+    margin: 10px;
+    
+    
+}
+
+footer img{
+    object-fit: cover;
+    width: 100px;
+}
+
+footer p{
+    font-size: 14px;
+    font-family: "Catamaran", sans-serif;
+    padding: 2px 10px;
+}
